@@ -1,0 +1,118 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#eeeeee;
+}
+
+.app{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    
+}
+
+/* Card */
+
+.card{
+    width:360px;
+    background:#ffffff;
+    border-radius:35px;
+    padding:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,.1);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0,0,0,.2);
+}
+
+/* Image */
+
+.profile-image{
+    width:100%;
+    height:340px;
+    object-fit:cover;
+    border-radius:30px;
+}
+
+/* Content */
+
+.card-content{
+    margin-top:20px;
+}
+
+.card-content h2{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:30px;
+    color:#111;
+}
+
+.verified{
+    color:#28c840;
+    font-size:22px;
+}
+
+.card-content p{
+    margin-top:12px;
+    color:#666;
+    line-height:1.6;
+    font-size:18px;
+}
+
+/* Bottom */
+
+.bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:30px;
+}
+
+/* Stats */
+
+.stats{
+    display:flex;
+    gap:20px;
+}
+
+.stat{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    font-weight:600;
+}
+
+.icon{
+    color:gray;
+    font-size:18px;
+}
+
+/* Button */
+
+.follow-btn{
+    border:none;
+    background:#f5f5f5;
+    padding:14px 30px;
+    border-radius:40px;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+.follow-btn:hover{
+    background:black;
+    color:white;
+}

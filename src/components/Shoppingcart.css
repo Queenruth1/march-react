@@ -1,0 +1,172 @@
+
+/* ---------- Overall card that wraps the whole app ---------- */
+.cart-container {
+  max-width: 28rem;       
+  margin: 0 auto;         
+  padding: 1.5rem;       
+  background-color: #ffffff;
+  border-radius: 1rem;   
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); /* shadow-md */
+}
+
+
+.cart-container > * + * {
+  margin-top: 1.5rem;
+}
+
+/* ---------- Main title ("Shopping Cart") ---------- */
+.cart-title {
+  font-size: 1.5rem;  
+  font-weight: 700;    
+  color: #1f2937;      
+}
+
+/* ---------- Section headings ("Products", "Your Cart") ---------- */
+.section-heading {
+  font-weight: 600;     
+  color: #374151;       
+  margin-bottom: 0.5rem; 
+}
+
+/* ---------- Product list wrapper ---------- */
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; 
+}
+
+/* ---------- A single row in the product list ---------- */
+.product-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9fafb; 
+  padding: 0.75rem;          
+  border-radius: 0.5rem;     
+}
+
+.product-name {
+  color: #374151; 
+}
+
+/* "Add" button */
+.btn-add {
+  padding: 0.25rem 0.75rem; 
+  background-color: #2563eb; 
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem; 
+  cursor: pointer;
+}
+
+.btn-add:hover {
+  background-color: #1d4ed8; 
+}
+
+/* ---------- Cart list wrapper ---------- */
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; 
+}
+
+/* Message shown when the cart has no items */
+.empty-cart {
+  color: #9ca3af;   
+  font-size: 0.875rem; 
+}
+
+/* ---------- A single row in the cart ---------- */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eff6ff; 
+  padding: 0.75rem;         
+  border-radius: 0.5rem;    
+}
+
+.cart-item-name {
+  color: #1f2937;   
+  font-weight: 500; 
+  margin: 0;
+}
+
+.cart-item-price {
+  font-size: 0.875rem; 
+  color: #6b7280;      
+  margin: 0;
+}
+
+/* Wrapper around the -, quantity, + controls */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+}
+
+/* Shared style for the round +/- buttons */
+.btn-decrease,
+.btn-increase {
+  width: 2rem;   
+  height: 2rem;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px; 
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn-decrease {
+  background-color: #ef4444; 
+}
+
+.btn-decrease:hover {
+  background-color: #dc2626; 
+}
+
+.btn-increase {
+  background-color: #22c55e; 
+}
+
+.btn-increase:hover {
+  background-color: #16a34a; 
+}
+
+.quantity-value {
+  width: 1.5rem;      
+  text-align: center;
+}
+
+/* ---------- "Remove Last Item Added" button ---------- */
+.btn-remove {
+  width: 100%;
+  padding: 0.5rem 0; 
+  background-color: #374151; 
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem; 
+  cursor: pointer;
+}
+
+.btn-remove:hover {
+  background-color: #1f2937; 
+}
+
+/* Style for when the button is disabled (empty cart) */
+.btn-remove:disabled {
+  background-color: #d1d5db; 
+  cursor: not-allowed;
+}
+
+/* ---------- Total price row at the bottom ---------- */
+.cart-total {
+  padding-top: 1rem;               
+  border-top: 1px solid #e5e7eb;   
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;               
+  color: #1f2937;                  
+}
