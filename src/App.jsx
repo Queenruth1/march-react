@@ -1,11 +1,11 @@
-// import './App.css'
-//  import Navbar from './components/Navbar';
+import './App.css'
+ import Navbar from './components/Navbar';
  import{useState} from 'react';
  import Shoppingcart from './components/Shoppingcart';
  import './components/Shoppingcart.css'
  import Form from './components/Form';
  import Profile from './components/profile';
-// import Herosection from './components/Herosection'
+import Herosection from './components/Herosection'
  import Button from './Components/button';
 
 // function App() {
