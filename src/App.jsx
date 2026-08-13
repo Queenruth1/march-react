@@ -1,4 +1,4 @@
-import './App.css'
+import './App.css';
  import Navbar from './components/Navbar';
  import{useState} from 'react';
  import Shoppingcart from './components/Shoppingcart';
@@ -6,7 +6,7 @@ import './App.css'
  import Form from './components/Form';
  import Profile from './components/profile';
 import Herosection from './components/Herosection'
- import Button from './Components/button';
+ import Button from './components/button';
 
 // function App() {
 //   return(
