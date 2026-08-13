@@ -4,6 +4,7 @@
  import Shoppingcart from './components/Shoppingcart';
  import './components/Shoppingcart.css'
  import Form from './components/Form';
+ import Profile from './components/profile';
 // import Herosection from './components/Herosection'
  import Button from './Components/button';
 
@@ -135,13 +136,13 @@
 //   </>
 // )
 // }
-function App() {
-  return (
-    <div>
-      <Shoppingcart />
-    </div>
-  );
-}
+// function App() {
+//   return (
+//     <div>
+//       <Shoppingcart />
+//     </div>
+//   );
+// }
 // function App() {
 //   return (
 //     <div>
@@ -149,4 +150,15 @@ function App() {
 //     </div>
 //   );
 // }
+function App() {
+  return (
+    <div>
+      <h1>User</h1>
+      <Profile />
+    </div>
+  );
+}
+
+
+
 export default App;
