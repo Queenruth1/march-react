@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./ShoppingCart.css"; 
+import "./Shoppingcart.css"; 
 
 
 function ProductItem({ product, onAdd }) {
